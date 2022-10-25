@@ -1,8 +1,7 @@
 .App-header {
-    grid-area: header;
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .navbar-nav li a {
@@ -39,6 +38,6 @@
     transition: 0.2s ease-out;
 }
 
-.header nav ul li a:hover::before {
+.App-header nav ul li a:hover::before {
     width: 100%;
 }

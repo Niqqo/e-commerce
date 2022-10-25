@@ -4,11 +4,8 @@ import CartWidget from "./CartWidget/CartWidget";
 
 function NavBar(){
     return(
-        <>
-
-        <a href="">
-            <img src={LOGO}/>
-            </a>
+        
+        <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button class="navbar-toggler bg-light" id="boton" type="button" data-bs-toggle="collapse"
@@ -16,6 +13,11 @@ function NavBar(){
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="box-imagen">
+                    <a href="">
+                        <img src={LOGO}/>
+                    </a>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -38,15 +40,16 @@ function NavBar(){
                                 <a class="nav-link active" id="link-a-navbar" aria-current="page"
                                     href="./secciones/feedback.html">Feedback</a>
                             </li>
-                            <li class="nav-item">
+                            {/* <li class="nav-item">
                             <img src={CartWidget}/>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
             </nav>
+        </header>
 
-        </>
+        
     )
 
 }

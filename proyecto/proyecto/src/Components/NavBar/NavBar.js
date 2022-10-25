@@ -1,11 +1,13 @@
-import "./navBar.css"
+import "./navBar.css";
+import LOGO from "../../img/LOGO.jpg"
+import CartWidget from "./CartWidget/CartWidget";
 
 function NavBar(){
     return(
         <>
-        
+
         <a href="">
-                //logo
+            <img src={LOGO}/>
             </a>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -35,6 +37,9 @@ function NavBar(){
                             <li class="nav-item">
                                 <a class="nav-link active" id="link-a-navbar" aria-current="page"
                                     href="./secciones/feedback.html">Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                            <img src={CartWidget}/>
                             </li>
                         </ul>
                     </div>

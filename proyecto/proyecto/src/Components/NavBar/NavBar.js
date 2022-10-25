@@ -5,7 +5,7 @@ import CartWidget from "./CartWidget/CartWidget";
 function NavBar(){
     return(
         
-        <header>
+
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button class="navbar-toggler bg-light" id="boton" type="button" data-bs-toggle="collapse"
@@ -47,7 +47,7 @@ function NavBar(){
                     </div>
                 </div>
             </nav>
-        </header>
+
 
         
     )

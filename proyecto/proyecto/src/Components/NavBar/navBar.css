@@ -1,0 +1,44 @@
+.App-header {
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav li a {
+    margin-right: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.App-header img {
+    height: 50px;
+    width: 93px;
+    margin: 15px 30px;
+}
+
+#link-a-navbar {
+    color: white;
+}
+
+#link-a-navbar-inicio {
+    color: orange;
+}
+
+.App-header nav ul li {
+    position: relative;
+}
+
+.App-header nav ul li a::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: rgba(255, 145, 77, 255);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.2s ease-out;
+}
+
+.header nav ul li a:hover::before {
+    width: 100%;
+}

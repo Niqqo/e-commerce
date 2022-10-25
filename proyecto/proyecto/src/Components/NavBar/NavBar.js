@@ -39,7 +39,7 @@ function NavBar(){
                                     href="./secciones/feedback.html">Feedback</a>
                             </li>
                             <li class="nav-item">
-                            push -u
+                            <img src={CartWidget}/>
                             </li>
                         </ul>
                     </div>

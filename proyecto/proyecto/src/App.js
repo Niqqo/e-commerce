@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
-import * as bootstrap from 'bootstrap';
 import NavBar from './Components/NavBar/NavBar';
+import ItemListContainer from './Components/NavBar/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
@@ -10,6 +9,7 @@ function App() {
       <header className="App-header">
        <NavBar/>
       </header>
+      <ItemListContainer/>
     </div>
   );
 }

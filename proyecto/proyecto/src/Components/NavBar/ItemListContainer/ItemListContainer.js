@@ -4,9 +4,7 @@ import Item from '../Item/Item';
 function ItemListContainer() {
   return (
     <div>
-        <Item title="Producto 1"/>
-        <Item title="Producto 2"/>
-        <Item title="Producto 3"/>
+        <Item price={200} title="Producto 1" imgurl="https://www.pixelstalk.net/wp-content/uploads/2016/05/Coffee-Wallpapers-HD-Free-Download.jpg"/>
     </div>
   );
 }

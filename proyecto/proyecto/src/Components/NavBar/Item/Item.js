@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from "../Button/Button";
 import './item.css';
 
 function Item(props) {
@@ -10,7 +11,8 @@ function Item(props) {
       <div className="card-detail">
         <h2>{props.title}</h2>
         <p>{props.detail}</p>
-        <h4 className="priceTag">{props.price} </h4>
+        <h4 className="priceTag">${props.price} </h4>
+        <Button>Ver más!</Button>
       </div>
     </div>
   );

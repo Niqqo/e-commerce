@@ -1,26 +1,30 @@
-import React, {useState, useEffect } from 'react'
-import FlexWrapper from '../FlexWrapper/FlexWrapper';
-import ItemList from './ItemList';
-import getItemsFromAPI from '../MockService/mockService';
+import React, {useState, useEffect} from 'react'
+import Button from "../Button/Button";
+import { getSingleItemFromAPI } from '../MockService/mockService';
 
-function ItemListContainer() {
-  const [productsList, setProductsList] = useState([]); 
+function ItemDetailContainer() {
+    const [product, setProduct] = useState([]);
 
-  useEffect(() => {
-    getItemsFromAPI().then((itemsDB) => {
-      console.log(itemsDB);
-      setProductsList(itemsDB);
-    });
-  }, []);
+    useEffect(() => {
+        getSingleItemFromAPI().then((itemsDB) => {
+            setProduct(itemsDB);
+        });
+    }, []);
 
-  return (
-    <div>
-        <FlexWrapper>
-          <ItemList productsList={productsList}/>
-        </FlexWrapper>
-    </div>
-  );
+    return ( 
+    <div className="card">
+            <div className="card-img">
+                <img src={product.imgurl} alt="Product img" />
+            </div>
+            <div className="card-detail">
+                <h2>{product.title}</h2>
+                <p>{product.detail}</p>
+                <h4 className="priceTag">${product.price} </h4>
+                <Button>Ver más!</Button>
+            </div>
+        </div>
+    );
 }
 
-export default ItemListContainer
+export default ItemDetailContainer;
 

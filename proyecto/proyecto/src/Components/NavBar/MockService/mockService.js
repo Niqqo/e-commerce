@@ -79,3 +79,12 @@ export function getSingleItemFromAPI(idParams) {
       }, 1000);
    });
 }
+
+export function getItemsFromAPIByCategory(categoryId) { 
+   return new Promise((resolve) => {
+      setTimeout(() => {
+         let itemsRequested = itemsDB.filter( item => item.category === categoryId)
+         resolve(itemsRequested);
+      }, 1000);
+   });
+}

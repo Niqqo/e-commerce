@@ -1,16 +1,20 @@
 import React, {useState, useEffect} from 'react'
 import Button from "../Button/Button";
 import { getSingleItemFromAPI } from '../MockService/mockService';
+import { useParams } from "react-router-dom";
 
 function ItemDetailContainer() {
     const [product, setProduct] = useState([]);
 
+    let params = useParams();
+    let id = params.id;
+
     useEffect(() => {
-        getSingleItemFromAPI().then((itemsDB) => {
+        getSingleItemFromAPI(id).then((itemsDB) => {
             setProduct(itemsDB);
         });
     }, []);
-
+    
     return ( 
     <div className="card">
             <div className="card-img">

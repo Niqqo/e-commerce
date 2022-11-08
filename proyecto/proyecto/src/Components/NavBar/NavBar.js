@@ -1,15 +1,17 @@
 import "./navBar.css";
 import LOGO from "../../img/LOGO.jpg"
 import CartWidget from "./CartWidget/CartWidget";
+import { Link } from "react-router-dom";
+
 
 function NavBar(){
     return(
         
             <>
             <div class="box-imagen">
-                    <a href="/">
+                    <Link to="/">
                         <img src={LOGO}/>
-                    </a>
+                    </Link>
                     </div>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -22,29 +24,29 @@ function NavBar(){
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" id="link-a-navbar-inicio" aria-current="page"
-                                    href="/">Inicio</a>
+                                <Link class="nav-link active" id="link-a-navbar-inicio" aria-current="page"
+                                    to="/">Inicio</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    href="/detalle">Detalle</a>
+                                <Link class="nav-link active" id="link-a-navbar" aria-current="page"
+                                    to="/detalle">Detalle</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    href="./secciones/ofertas.html">Ofertas</a>
+                                <Link class="nav-link active" id="link-a-navbar" aria-current="page"
+                                    to="./secciones/ofertas.html">Ofertas</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    href="./secciones/nosotros.html">Nosotros</a>
+                                <Link class="nav-link active" id="link-a-navbar" aria-current="page"
+                                    to="./secciones/nosotros.html">Nosotros</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    href="./secciones/feedback.html">Feedback</a>
+                                <Link class="nav-link active" id="link-a-navbar" aria-current="page"
+                                    to="./secciones/feedback.html">Feedback</Link>
                             </li>
                             <li class="nav-item">
                                 <div>
-                                <a class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    href="./secciones/feedback.html"><CartWidget/></a>
+                                <Link class="nav-link active" id="link-a-navbar" aria-current="page"
+                                    to="./secciones/feedback.html"><CartWidget/></Link>
                                 </div>
                             </li>   
                         </ul>

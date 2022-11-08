@@ -29,7 +29,7 @@ function NavBar(){
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    to="/detalle">Detalle</Link>
+                                    to="/detalle/1">Detalle</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link active" id="link-a-navbar" aria-current="page"

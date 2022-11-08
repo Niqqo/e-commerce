@@ -5,6 +5,7 @@ const itemsDB = [
        description: "asdasdasd",
        price: 200,
        stock: 10,
+       category: "Cafe-Negro",
        imgurl:"https://www.pixelstalk.net/wp-content/uploads/2016/05/Coffee-Wallpapers-HD-Free-Download.jpg",
    },
    {
@@ -13,6 +14,7 @@ const itemsDB = [
        description: "asdasdasd",
        price: 200,
        stock: 10,
+       category: "Cafe-Negro",
        imgurl:"https://www.xtrafondos.com/wallpapers/taza-de-cafe-4307.jpg",
    },
    {
@@ -21,6 +23,7 @@ const itemsDB = [
        description: "asdasdasd",
        price: 200,
        stock: 10,
+       category: "Cafe-Negro",
        imgurl:"https://images3.alphacoders.com/941/94135.jpg",
     },
     {
@@ -29,6 +32,7 @@ const itemsDB = [
        description: "asdasdasd",
        price: 200,
        stock: 10,
+       category: "Cafe-conLeche",
        imgurl:"https://images8.alphacoders.com/903/903178.jpg",
     },
     {
@@ -37,6 +41,7 @@ const itemsDB = [
        description: "asdasdasd",
        price: 200,
        stock: 10,
+       category: "Cafe-conLeche",
        imgurl:"https://images6.alphacoders.com/869/869347.jpg",
     },
     {
@@ -45,6 +50,7 @@ const itemsDB = [
        description: "asdasdasd",
        price: 200,
        stock: 10,
+       category: "Cafe-conLeche",
        imgurl:"https://images5.alphacoders.com/787/787947.jpg",
     }
 

@@ -33,15 +33,15 @@ function NavBar(){
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    to="./secciones/ofertas.html">Ofertas</Link>
+                                    to="/category/coffes">Cafes 1</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    to="./secciones/nosotros.html">Nosotros</Link>
+                                    to="/category/Cafe-Negro">Cafe-Negro</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    to="./secciones/feedback.html">Feedback</Link>
+                                    to="/category/Cafe-conLeche">Cafe-conLeche</Link>
                             </li>
                             <li class="nav-item">
                                 <div>

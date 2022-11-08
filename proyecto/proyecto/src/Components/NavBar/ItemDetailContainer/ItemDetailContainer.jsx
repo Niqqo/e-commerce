@@ -23,7 +23,7 @@ function ItemDetailContainer() {
                 <Button>Ver más!</Button>
             </div>
         </div>
-    );
+    ); 
 }
 
 export default ItemDetailContainer;

@@ -7,7 +7,7 @@ function NavBar(){
         
             <>
             <div class="box-imagen">
-                    <a href="">
+                    <a href="/">
                         <img src={LOGO}/>
                     </a>
                     </div>
@@ -23,11 +23,11 @@ function NavBar(){
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" id="link-a-navbar-inicio" aria-current="page"
-                                    href="./index.html">Inicio</a>
+                                    href="/">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" id="link-a-navbar" aria-current="page"
-                                    href="./secciones/destacados.html">Destacados</a>
+                                    href="/detalle">Detalle</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" id="link-a-navbar" aria-current="page"

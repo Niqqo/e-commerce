@@ -8,7 +8,6 @@ function ItemListContainer() {
 
   useEffect(() => {
     getItemsFromAPI().then((itemsDB) => {
-      console.log(itemsDB);
       setProductsList(itemsDB);
     });
   }, []);
